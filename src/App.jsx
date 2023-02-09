@@ -30,7 +30,7 @@ const App = () => {
     e.preventDefault()
 
     const todo = {
-      id: Math.random,
+      id: Math.random(),
       title,
       time,
       completed: false
@@ -108,7 +108,6 @@ const App = () => {
         <Table striped>
           <thead>
             <tr>
-              <th>#</th>
               <th>Título</th>
               <th>Tempo</th>
               <th>Finalizar</th>
@@ -116,9 +115,8 @@ const App = () => {
             </tr>
           </thead>
           <tbody>
-            {todos.length !== 0 && todos.map((item) => (
-              <tr key={item.id}>
-                <td>{item.id}</td>
+            {todos.length !== 0 && todos.map((item, index) => (
+              <tr key={index}>
                 <td className={item.completed ? 'active' : ''}>{item.title}</td>
                 <td>{item.time}</td>
                 <td onClick={() => handleEdit(item)}>
