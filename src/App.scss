@@ -1,0 +1,59 @@
+.app {
+    width: 40%;
+    margin: 2em auto;
+    border-radius: 10px;
+    color: #fff;
+}
+
+form {
+    border: 0.2rem solid #ececec;
+    padding: 15px;
+    border-radius: 6px;
+
+    h2 {
+        color: #33415c;
+    }
+
+    .form-label {
+        color: #33415c;
+    }
+}
+
+.todo-container {
+    border: 0.2rem solid #ececec;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 100px;
+
+    h4 {
+        margin-top: 20px;
+        color: #33415c;
+    }
+
+    h2 {
+        color: #33415c;
+    }
+
+    table {
+
+        th {
+            font-weight: inherit;
+        }
+
+        tbody {
+            .active {
+                text-decoration: line-through;
+            }
+
+            td {
+                .trash {
+                    color: red;
+                }
+
+                .fill {
+                    color: green;
+                }
+            }
+        }
+    }
+}
